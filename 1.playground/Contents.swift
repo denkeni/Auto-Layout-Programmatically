@@ -1,7 +1,9 @@
 import UIKit
 import PlaygroundSupport
 
-// setFrame
+/************
+ * setFrame *
+ ************/
 
 let view = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
 PlaygroundPage.current.liveView = view
@@ -13,7 +15,9 @@ subview.backgroundColor = .white
 view.addSubview(subview)
 
 
-/// Auto Layout constraint
+/**************************
+ * Auto Layout constraint *
+ **************************/
 
 var constraints = [NSLayoutConstraint]()
 
@@ -29,7 +33,7 @@ var constraints = [NSLayoutConstraint]()
 
 
 //let subviewB = UIView()
-//subviewB.backgroundColor = .blue
+//subviewB.backgroundColor = .green
 //subviewB.translatesAutoresizingMaskIntoConstraints = false
 //view.addSubview(subviewB)
 //constraints.append(NSLayoutConstraint(item: subviewB, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 150)) // subviewA.top = 1.0 * view.top + 150
@@ -39,7 +43,7 @@ var constraints = [NSLayoutConstraint]()
 
 
 //let subviewC = UIView()
-//subviewC.backgroundColor = .green
+//subviewC.backgroundColor = .blue
 //subviewC.translatesAutoresizingMaskIntoConstraints = false
 //view.addSubview(subviewC)
 //constraints.append(subviewC.centerXAnchor.constraint(equalTo: view.centerXAnchor))
